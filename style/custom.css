@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .conteiner {
     max-width: 1180px;
     padding: 0px 25px;
@@ -34,10 +41,14 @@
 
 }
 .menu-btn span:before {
-    transform: translateY(-6px);
+    -webkit-transform: translateY(-6px);
+        -ms-transform: translateY(-6px);
+            transform: translateY(-6px);
 }
 .menu-btn span:after {
-    transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+            transform: translateY(5px);
 }
 header {
     overflow: hidden;
@@ -47,14 +58,20 @@ header img {
     margin-top: 40px;
 }
 .logo {
-    justify-content: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
 }
 .header-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 125px
 }
 .nav-wrap {
-    justify-content: end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     width: 1000px;
 }
 .header__nav {
@@ -242,8 +259,12 @@ section {
     background-color: #fdfdfd;
 }
 .part-flex-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 110px;
     margin-bottom: 125px;
 }
@@ -393,7 +414,55 @@ section {
     padding-top: 100px;
     width: 560px;
 }
+input::-webkit-input-placeholder {
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 12px;
+    color: black;
+}
+input::-moz-placeholder {
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 12px;
+    color: black;
+}
+input:-ms-input-placeholder {
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 12px;
+    color: black;
+}
+input::-ms-input-placeholder {
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 12px;
+    color: black;
+}
 input::placeholder {
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 12px;
+    color: black;
+}
+textarea::-webkit-input-placeholder {
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 12px;
+    color: black;
+}
+textarea::-moz-placeholder {
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 12px;
+    color: black;
+}
+textarea:-ms-input-placeholder {
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 12px;
+    color: black;
+}
+textarea::-ms-input-placeholder {
     font-family: "Montserrat";
     font-weight: 800;
     font-size: 12px;
@@ -430,9 +499,15 @@ textarea::placeholder {
 /* connektion */
 
 .section7 { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     
 
 }
@@ -458,9 +533,15 @@ textarea::placeholder {
 /* social network */
 .sec-network {
     height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     
 }
 .icon-network {
@@ -550,11 +631,19 @@ footer div a {
     }
     .menu-btn.menu-active span:before {
         
-        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        
+            -ms-transform: rotate(-45deg);
+        
+                transform: rotate(-45deg);
     }
     .menu-btn.menu-active span:after {
         
-        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        
+            -ms-transform: rotate(45deg);
+        
+                transform: rotate(45deg);
     }
     .nav-wrap {
         margin-right: 20px;
